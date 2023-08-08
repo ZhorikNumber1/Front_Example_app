@@ -1,0 +1,25 @@
+.create-button_civilization {
+    padding: 10px 34px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #75591d;
+    color: #ffffff;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.create-button_civilization:hover {
+    background-color: rgb(255, 19, 0);
+}
+
+.create-button_civilization:focus {
+    outline: none;
+}
+.container_building {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 5px;
+}

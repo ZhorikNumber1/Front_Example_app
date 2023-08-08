@@ -1,0 +1,27 @@
+.create-button_unit {
+    padding: 10px 50px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #543f0f;
+    color: #ffffff;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-top: 350px;
+    text-decoration: none;
+    text-align: center;
+}
+.create-button_unit:hover {
+    background-color: rgb(192, 158, 57);
+}
+
+.create-button_unit:focus {
+    outline: none;
+}
+.container_unit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}

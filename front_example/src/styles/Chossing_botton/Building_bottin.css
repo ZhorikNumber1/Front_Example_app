@@ -1,0 +1,23 @@
+.create-button_building {
+    padding: 10px 34px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #75591d;
+    color: #ffffff;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.create-button_building:hover {
+    background-color: rgb(178, 144, 32);
+}
+
+.create-button_building:focus {
+    outline: none;
+}
+.container_building {
+    margin-top: 5vh;
+    margin-left: 10px;
+    margin-right: 10px;
+}
