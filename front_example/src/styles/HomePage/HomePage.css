@@ -1,0 +1,107 @@
+.wrapper {
+    background-image: url("./../../components/Img/background-for-a-website-that-makes-mods-for-civilization-6-932683261.png");
+    width: 100%;
+    min-width: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.button {
+    text-decoration: none;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #d7ad21;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+}
+
+.button:hover {
+    background-color: #856a10;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.text {
+    margin-left: 40px;
+    margin-right: 40px;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
+    font-size: 32px;
+    margin-top: 10vh;
+    mix-blend-mode: overlay;
+}
+
+.button_github {
+    text-decoration: none;
+    margin-top: 120px;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #808080;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+    transition: all .3s;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #484540;
+        border-radius: 10rem;
+        z-index: -2;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: #030303;
+        transition: all .3s;
+        border-radius: 10rem;
+        z-index: -1;
+    }
+
+    &:hover {
+        color: #fff;
+
+        &:before {
+            width: 100%;
+        }
+    }
+}
