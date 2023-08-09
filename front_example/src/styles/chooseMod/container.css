@@ -1,4 +1,10 @@
 .container {
+    background-image: url("./../../components/Img/civilization-6-537712853 (1).png");
+    width: 100%;
+    min-width: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;

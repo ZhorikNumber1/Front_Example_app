@@ -2,7 +2,7 @@
     background-image: url("./../../components/Img/background-for-a-website-that-makes-mods-for-civilization-6-932683261.png");
     width: 100%;
     min-width: 100vh;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -19,7 +19,7 @@
     height: 100vh;
 }
 
-.button {
+.button_create {
     text-decoration: none;
     margin-top: 100px;
     margin-bottom: 100px;
@@ -32,13 +32,38 @@
     border-radius: 20px;
     cursor: pointer;
     font-family: 'Playfair Display', serif;
+    z-index: 1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.5s;
 }
 
-.button:hover {
+.button_create:hover {
     background-color: #856a10;
 }
 
-.button:focus {
+.button_create:focus {
+    outline: none;
+}
+.button_create:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.button_create:before {
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+}
+.button_create:focus {
     outline: none;
 }
 
@@ -104,4 +129,51 @@
             width: 100%;
         }
     }
+}
+.button_about {
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #d7ad21;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+    z-index: 1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.5s;
+}
+
+.button_about:hover {
+    background-color: #856a10;
+}
+
+.button_about:focus {
+    outline: none;
+}
+.button_about:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.button_about:before {
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+}
+.button_about:focus {
+    outline: none;
 }
