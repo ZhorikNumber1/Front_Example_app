@@ -14,16 +14,16 @@
 .text {
     justify-content: center;
     align-items: center;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 250px;
+    margin-right: 250px;
     text-transform: uppercase;
     letter-spacing: 0.25em;
     color: #ffffff;
-    font-weight: 600;
+    font-weight: 700;
     text-align: center;
-    font-size: 32px;
-    margin-top: 10vh;
-    mix-blend-mode: overlay;
+    font-size: 14px;
+    margin-top: 1vh;
+    text-shadow: #000000 1px 0 10px;
 }
 .button_back {
     text-decoration: none;
@@ -71,4 +71,16 @@
 }
 .button_back:focus {
     outline: none;
+}
+.text_up {
+    justify-content: center;
+    align-items: center;
+    margin-left: 250px;
+    margin-right: 250px;
+    letter-spacing: 0.25em;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
+    font-size: 26px;
+    margin-top: 5vh;
 }

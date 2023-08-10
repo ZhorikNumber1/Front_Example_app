@@ -42,3 +42,95 @@
     position: relative;
     -webkit-font-smoothing: antialiased;
 }
+.button_unit_pick {
+    text-decoration: none;
+    margin-top: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    padding: 10px 50px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #d7ad21;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+    z-index: 1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.5s;
+}
+
+.button_unit_pick:hover {
+    background-color: #856a10;
+}
+
+.button_unit_pick:focus {
+    outline: none;
+}
+.button_unit_pick:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.button_unit_pick:before {
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+}
+.button_unit_pick_block {
+    text-decoration: none;
+    margin-top: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px 90px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #d7ad21;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+    z-index: 1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.5s;
+}
+
+.button_unit_pick_block:hover {
+    background-color: #ff0000;
+}
+
+.button_unit_pick_block:focus {
+    outline: none;
+}
+.button_unit_pick_block:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.button_unit_pick_block:before {
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+}
