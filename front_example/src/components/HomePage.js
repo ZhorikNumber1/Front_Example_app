@@ -6,8 +6,9 @@ const HomePage = () => {
     return (
         <div className="wrapper">
             <div className='container_button'>
-                <text className="text">Добро пожаловать в мастерскую по созданию модов для Civ 6</text>
-                <Link to = "/chooseMod" className='button'>Создать собственный мод</Link>
+                <text className="main_text">Добро пожаловать в мастерскую по созданию модов для Civ 6</text>
+                <Link to = "/chooseMod" className='button_create'>Создать собственный мод</Link>
+                <Link to = "/about" className='button_about'>О проекте</Link>
                 <Link to= "https://github.com/ZhorikNumber1/Front_Example_app" className = "button_github">github</Link>
             </div>
         </div>

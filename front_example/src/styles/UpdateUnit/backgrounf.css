@@ -1,0 +1,23 @@
+.background_creating{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("./../../components/Img/create-builder-78718260.png");
+    width: 100%;
+    min-width: 100vh;
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+}
+.container_table {
+    border: 2px #030303 ;
+    background-color: #dcd8c8;
+    box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.1);
+    flex-basis: 100%;
+}
+.table-header {
+    background-color: #94804c;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}

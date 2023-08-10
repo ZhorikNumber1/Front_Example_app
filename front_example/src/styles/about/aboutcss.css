@@ -1,0 +1,86 @@
+.wrapper {
+    background-image: url("./../../components/Img/background-for-a-website-that-makes-mods-for-civilization-6-932683261.png");
+    width: 100%;
+    min-width: 100vh;
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.text {
+    justify-content: center;
+    align-items: center;
+    margin-left: 250px;
+    margin-right: 250px;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 1vh;
+    text-shadow: #000000 1px 0 10px;
+}
+.button_back {
+    text-decoration: none;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #d7ad21;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+    z-index: 1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.5s;
+}
+
+.button_back:hover {
+    background-color: #856a10;
+}
+
+.button_back:focus {
+    outline: none;
+}
+.button_back:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.button_back:before {
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+}
+.button_back:focus {
+    outline: none;
+}
+.text_up {
+    justify-content: center;
+    align-items: center;
+    margin-left: 250px;
+    margin-right: 250px;
+    letter-spacing: 0.25em;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
+    font-size: 26px;
+    margin-top: 5vh;
+}
