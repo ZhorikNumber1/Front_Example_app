@@ -9,22 +9,23 @@
     font-size: 32px;
     margin-top: 10vh;
     mix-blend-mode: overlay;
-    text-shadow: #8d8830 1px 0 10px;
+    text-shadow: #000000 1px 0 10px;
     margin-bottom: 40px
 }
 .text_mod_pick {
 
     margin-left: 40px;
     margin-right: 40px;
+    margin-bottom: 40px;
     text-transform: uppercase;
     letter-spacing: 0.25em;
     color: #ffffff;
     font-weight: 800;
     text-align: center;
-    font-size: 32px;
+    font-size: 20px;
     margin-top: 3vh;
     mix-blend-mode: overlay;
-    text-shadow: #000000 10px 0 10px;
+    text-shadow: #000000 1px 0 10px;
 }
 .container_text {
     display: flex;

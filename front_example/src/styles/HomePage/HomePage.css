@@ -67,7 +67,8 @@
     outline: none;
 }
 
-.text {
+.main_text {
+    text-shadow: #000000 1px 0 10px;
     margin-left: 40px;
     margin-right: 40px;
     text-transform: uppercase;
@@ -75,7 +76,7 @@
     color: #ffffff;
     font-weight: 600;
     text-align: center;
-    font-size: 32px;
+    font-size: 40px;
     margin-top: 10vh;
     mix-blend-mode: overlay;
 }
