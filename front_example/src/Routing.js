@@ -3,7 +3,7 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 import HomePage from "./components/HomePage";
 import About from "./components/About";
 import ChooseMod from "./components/chooseMod";
-import UpdateUnit from "./components/updateUnit";
+import UpdateUnit from "./components/chooseUnit";
 export default function Routing(){
     return(
     <BrowserRouter>
