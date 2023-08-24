@@ -1,8 +1,8 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import "./../styles/chooseMod/container.css"
-import "./../styles/chooseMod/text.css"
-import "./../styles/chooseMod/button.css"
+import "../../styles/chooseMod/container.css"
+import "../../styles/chooseMod/text.css"
+import "../../styles/chooseMod/button.css"
 
 class ChooseMod extends React.Component {
     state = {

@@ -1,0 +1,58 @@
+.background_creating {
+    height: 100vh;
+    background-image: url("./../../components/Img/civilization-6-355247657.png");
+    width: 100%;
+    min-width: 100vh;
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.background_serch {
+    background-color: #381013;
+    border-top: #ffffff;
+    bottom: 0;
+    box-shadow: 1px 3px 120px 0 rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    z-index: 800;
+    width: 30vh;
+}
+
+.margin-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 40px;
+}
+
+.korobka {
+    margin-left: 30vh;
+    width: 50%;
+    min-height: 50vh;
+    height: fit-content;
+    background-image: url("./../../components/Img/parchment_patternbright.png");
+    box-shadow: 2px 2px 100px rgb(0, 0, 0);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.photo_unit_in_korobka{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+.popolam{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 100%;
+}
+

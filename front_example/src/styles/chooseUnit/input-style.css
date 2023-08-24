@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;1,200&display=swap');
+
+.button-confirm {
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    padding: 10px 30px;
+    font-size: 2.5vh;
+    font-weight: 700;
+    background-color: #d7ad21;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Noto Sans', sans-serif;
+    z-index: 1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.5s;
+}
+
+.button-confirm:hover {
+    background-color: rgba(182, 143, 34, 0.98);
+}
+.input-main{
+    background-color: rgba(170, 142, 62, 0);
+    color: #000000;
+    margin-top: -20px;
+    font-family: 'Noto Sans', sans-serif;
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #030303;
+    width: 200px;
+
+}
+input-main:focus {
+    border-color: #007bff;
+    outline: none;
+}
+.div-size-update-unit{
+    height: 7vh;
+}

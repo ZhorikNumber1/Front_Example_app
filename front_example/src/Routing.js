@@ -2,8 +2,10 @@ import React from "react";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import HomePage from "./components/HomePage";
 import About from "./components/About";
-import ChooseMod from "./components/chooseMod";
-import UpdateUnit from "./components/chooseUnit";
+import ChooseMod from "./components/Units/chooseMod";
+import ChooseUnit from "./components/Units/chooseUnit";
+import UpdateUnit from "./components/Units/updateUnit";
+import Test from "./components/test"
 export default function Routing(){
     return(
     <BrowserRouter>
@@ -11,7 +13,9 @@ export default function Routing(){
             <Route exact path="/" element = {<HomePage/>}/>
             <Route exact path='/chooseMod' element={<ChooseMod/>}/>
             <Route exact path = "/about" element={<About/>}/>
-            <Route exact path = "/chooseMod/UpdateUnit" element={<UpdateUnit/>}/>
+            <Route exact path = "/chooseMod/UpdateUnit" element={<ChooseUnit/>}/>
+            <Route exact path="/chooseMod/UpdateUnit/Settler" element={<UpdateUnit/>}/>
+            <Route exact path="/test" element={<Test/>}/>
         </Routes>
     </BrowserRouter>
     )

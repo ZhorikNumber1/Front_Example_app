@@ -1,0 +1,8 @@
+.background_updateUnit{
+    background-color: #2950cc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
