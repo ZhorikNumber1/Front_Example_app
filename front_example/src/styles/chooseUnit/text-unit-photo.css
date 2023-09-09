@@ -4,12 +4,16 @@
 .text-search-unit-title{
     display: flex;
     justify-content: center;
-    background-color: rgba(48, 92, 150, 0.46);
+    background-image: url("./../../components/Img/fon_Choose.png");
     color: white;
     padding: 10px;
     font-size: 3vh;
     font-weight: 600;
+    min-height: 40px;
     height: 40px;
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
     font-family: 'Noto Sans', sans-serif;
 
 }

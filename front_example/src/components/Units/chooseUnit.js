@@ -2,7 +2,7 @@ import React, {Component, useEffect, useState} from "react";
 import "../../styles/chooseUnit/backgrounf.css";
 import "../../styles/chooseUnit/text-unit-photo.css";
 import axios from 'axios';
-import Tooltip from "./../tooltip/Tooltip"
+import Tooltip from "../Tooltip/Tooltip"
 import {render} from "@testing-library/react";
 import '../../styles/chooseUnit/input-style.css'
 
@@ -10,7 +10,7 @@ export default function ChooseUnit() {
     const [modName, setModName] = useState('');
 
     const handleDownload = () => {
-        fetch(`http://localhost:8080/api/v1/dowland/${modName}`, {
+        fetch(`http://localhost:8080/api/v1/mod/downloadMod/${modName}`, {
             method: 'GET'
         })
             .then(response => response.blob())
@@ -32,19 +32,32 @@ export default function ChooseUnit() {
                 console.error(error);
             });
     };
-    const [userUnit, setUserUnit] = useState({name: '', unit_Type: '', cost: '', id: '', baseMoves: '', combat: '', nameMode: ''});
-
+    const [userUnit, setUserUnit] = useState({
+        id: '',
+        name: '',
+        nameMod: '',
+        author: '',
+        description: '',
+        cost: '',
+        baseMoves: '',
+        unit_Type: '',
+        name_photo: '',
+        combat: ''
+    });
     const handleSubmit = (event) => {
         event.preventDefault();
         const id = unitInfo.id;
+        const unit_Type = unitInfo.unit_Type;
         // Отправка POST-запроса на бекенд с помощью fetch или axios
-        fetch('http://localhost:8080/api/v1/create_mod', {
+        fetch('http://localhost:8080/api/v1/mod/create_mod', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
-            },  body: JSON.stringify({
+            }, body: JSON.stringify({
                 ...userUnit,
-                id: id // добавьте значение id в объект userUnit
+                id: id,
+                unitType: unit_Type,
+
             })
         })
             .then(response => response.json())
@@ -69,7 +82,7 @@ export default function ChooseUnit() {
 
     const getUnits = async () => {
         try {
-            const response = await axios.get("http://localhost:8080/api/v1/units");
+            const response = await axios.get("http://localhost:8080/api/v1/mod/units");
             setUnits(response.data);
         } catch (error) {
             console.log(error);
@@ -79,7 +92,7 @@ export default function ChooseUnit() {
 
     const fetchUnitInfo = async (id) => {
         try {
-            const response = await fetch(`http://localhost:8080/api/v1/units/${id}`);
+            const response = await fetch(`http://localhost:8080/api/v1/mod/units/${id}`);
             const data = await response.json();
             setUnitInfo(data);
         } catch (error) {
@@ -96,7 +109,7 @@ export default function ChooseUnit() {
                 <div>
                     {units.map((unit) => (
                         <div key={unit.name} className="barder_style">
-                            <button className='text-unit-photo' src={`data:image/png;base64,${unit.photoURL}`}
+                            <button className='text-unit-photo'
                                     onClick={() => fetchUnitInfo(unit.name)}>{unit.name}</button>
                         </div>
                     ))}
@@ -112,6 +125,7 @@ export default function ChooseUnit() {
                                 </div>
                             </div>
                             <form onSubmit={handleSubmit}>
+                                <div className="divondopskiy"/>
                                 <div className="div-size-update-unit">
                                     <Tooltip
                                         position="top"
@@ -120,6 +134,7 @@ export default function ChooseUnit() {
                                     </Tooltip>
                                 </div>
                                 <text>{unitInfo.name}</text>
+                                <div className="divondopskiy"/>
                                 <div className="div-size-update-unit">
                                     <Tooltip
                                         position="top"
@@ -139,6 +154,7 @@ export default function ChooseUnit() {
                                         placeholder={unitInfo.cost}
                                     />
                                 </div>
+                                <div className="divondopskiy"/>
                                 <div className="div-size-update-unit">
                                     <Tooltip
                                         position="top"
@@ -146,6 +162,7 @@ export default function ChooseUnit() {
                                         <text className="text-title-parameters">Очки передвежения</text>
                                     </Tooltip>
                                 </div>
+                                <div className="divondopskiy"/>
                                 <div className="div-size-update-unit">
                                     <input
                                         className="input-main"
@@ -159,41 +176,42 @@ export default function ChooseUnit() {
                                     />
                                 </div>
                                 <div>
-                                    {unitInfo.combat !== "-1" ? (
+                                    <div className="divondopskiy"/>
+                                    {unitInfo.combat != "-1" ? (
                                         <div>
-                                        <div className="div-size-update-unit">
-                                            <Tooltip
+                                            <div className="div-size-update-unit">
+                                                <Tooltip
                                                     position="top"
                                                     content="Боевая мощь - определяет общую силу отряда. Для юнитов ближнего боя это включает как их наступательную, так и оборонительную мощь; для юнитов дальнего боя это включает только их оборонительную мощь (используется только при нападении).">
                                                     <text className="text-title-parameters">Боевая мощь</text>
-                                            </Tooltip>
+                                                </Tooltip>
+                                            </div>
+                                            <div className="div-size-update-unit">
+                                                <input
+                                                    className="input-main"
+                                                    type="number"
+                                                    name="combat"
+                                                    min="1"
+                                                    max="9999"
+                                                    value={userUnit.combat}
+                                                    onChange={handleChange}
+                                                    placeholder={unitInfo.combat}
+                                                />
+                                            </div>
                                         </div>
-                                        <div className="div-size-update-unit">
-                                            <input
-                                                className="input-main"
-                                                type="number"
-                                                name="combat"
-                                                min="1"
-                                                max="9999"
-                                                value={userUnit.combat}
-                                                onChange={handleChange}
-                                                placeholder={unitInfo.combat}
-                                            />
-                                        </div>
-                                        </div>
-                                        ) : (
+                                    ) : (
                                         <div>
 
                                         </div>
-                                        )}
+                                    )}
                                 </div>
-
+                                <div className="divondopskiy"/>
                                 <div className="div-size-update-unit">
                                     <input
                                         className="input-main"
                                         type="text"
-                                        name="nameMode"
-                                        value={userUnit.nameMode}
+                                        name="nameMod"
+                                        value={userUnit.nameMod}
                                         onChange={handleChange}
                                         placeholder="Название вашего мода"
                                     />

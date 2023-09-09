@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Noto+Sans:wght@200;300&display=swap');
+
+
+.input_auth_test {
+    position: relative;
+    height: 60px;
+    width: 100%;
+    background-color: rgba(94, 81, 16, 0.29);
+    border-radius: 18px;
+    padding: 0 10px;
+    margin-top: 17px;
+    font-size: 19px;
+    font-weight: 300;
+    font-family: 'Inter', sans-serif;
+    color: #030303;
+}
+.input_auth_test.active {
+    position: relative;
+    height: 60px;
+    width: 100%;
+    background-color: rgba(136, 115, 24, 0.29);
+    border-radius: 18px;
+    padding: 0 10px;
+    margin-top: 17px;
+    font-size: 19px;
+    font-weight: 300;
+    font-family: 'Inter', sans-serif;
+    color: #030303;
+}
+
+.input_auth_placeholder {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(0%);
+    transition: transform 0.3s ease; /* анимация нового положения текста */
+    font-size: 16px;
+    font-weight: 800;
+    font-family: 'Inter', sans-serif;
+    color: #030303;
+}
+.input_auth_placeholder.active {
+    transform: translateY(-140%); /* новое положение текста при активации инпута */
+    font-size: 12px; /* изменение размера шрифта, если требуется */
+    color: #030303;
+}
